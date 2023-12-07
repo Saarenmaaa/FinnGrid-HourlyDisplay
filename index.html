@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-taso Visualisointi</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="input-container">
+        <div class="date">
+            <label for="start-date">Start date: </label>
+            <input type="date" id="start-date" name="start-date" class="date">
+        
+            <label for="end-date">End date: </label>
+            <input type="date" id="end-date" name="end-date" class="date">
+        </div>
+        <fieldset class="measure">
+            <legend>Select measure</legend>
+            <label for="input1">
+                <input type="radio" id="input1" name="data-type" value="74">
+                Electricity production in Finland
+            </label>
+            
+            <label for="input2">
+                <input type="radio" id="input2" name="data-type" value="75"> 
+                Wind power generation in Finland
+            </label>
+
+            <label for="input3">
+                <input type="radio" id="input3" name="data-type" value="124">
+                Electricity consumption in Finland
+            </label>
+        </fieldset>
+        <button>Get Data</button>
+    </div>
+    <div class="wrapper" id="wrapper"></div>
+    <script src="https://d3js.org/d3.v6.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
